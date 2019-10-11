@@ -15,6 +15,7 @@ public class Server {
         while (true) {
             Socket socket = server.accept();//阻塞方法
             new ServerThread(socket).start();
+            System.out.println("123");
         }
         //server.close();
     }
